@@ -1,0 +1,208 @@
+:root {
+    /* colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    /* results background gradient*/
+    --light-slate-blue: hsl(252, 100%, 67%); 
+    --light-royal-blue: hsl(241, 81%, 54%);
+    /* circle gradient*/
+    --violet-blue: hsla(256, 72%, 46%, 1); 
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* text default */
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--pale-blue);
+}
+
+.main-container {
+    width: 400px;
+    height: 300px;
+    background: var(--white);
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.result-container {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-title {
+    color: var(--light-lavender);
+}
+
+
+
+.result-circle-container {
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-text {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.score-word-description {
+    color: var(--white);
+}
+
+.result-sm-text {
+    color: var(--light-lavender);
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+.summary-container {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary-breakdown-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.breakdown-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.6rem;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.breakdown-title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breakdown-icons {
+    width: 0.6rem;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.breakdown-score {
+    color: var(--dark-gray-blue);
+}
+
+.breakdown-score-alt-color {
+    color: var(--light-lavender);
+}
+
+.reaction {
+    color: var(--light-red);
+    background: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+    color: var(--orangey-yellow);
+    background: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+    color: var(--green-teal);
+    background: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+    color: var(--cobalt-blue);
+    background: hsla(234, 85%, 45%, 0.1);
+}
+
+.continue-button {
+    width: 100%;
+    height: 30px;
+    background: var(--dark-gray-blue);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    color: var(--white);
+}
+
+.continue-button:hover {
+    cursor: pointer;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* media queries for mobile */
+@media (max-width: 400px) {
+    .main-container {
+        width: 300px;
+        min-height: 600px;
+        border-radius: 0;
+        flex-direction: column;
+    }
+    .result-container {
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 20px 20px;
+    }
+    .summary-container {
+        width: 100%;
+        height: 50%;
+    }
+    .attribution {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

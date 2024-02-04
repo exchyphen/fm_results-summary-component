@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Results Summary Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="result-container">
+        <div class="result-title">Your Result</div>
+        <div class="result-circle-container">
+          <div class="score-text">76</div>
+          <div class="result-sm-text">of 100</div>
+        </div>
+        <div class="score-word-description">Great</div>
+        <div class="result-sm-text">
+          You scored higher than 65% of the people who have taken these tests.
+        </div>
+      </div>
+      <div class="summary-container">
+        <div class="summary-title">Summary</div>
+        <div class="summary-breakdown-container">
+          <div class="breakdown-container reaction">
+            <div class="breakdown-title">
+              <img
+                class="breakdown-icons"
+                src="./assets/images/icon-reaction.svg"
+                alt="reaction icon"
+              />
+              Reaction
+            </div>
+            <div class="breakdown-score">
+              80 <span class="breakdown-score-alt-color">/ 100</span>
+            </div>
+          </div>
+
+          <div class="breakdown-container memory">
+            <div class="breakdown-title">
+              <img
+                class="breakdown-icons"
+                src="./assets/images/icon-memory.svg"
+                alt="memory icon"
+              />Memory
+            </div>
+            <div class="breakdown-score">
+              92 <span class="breakdown-score-alt-color">/ 100</span>
+            </div>
+          </div>
+
+          <div class="breakdown-container verbal">
+            <div class="breakdown-title">
+              <img
+                class="breakdown-icons"
+                src="./assets/images/icon-verbal.svg"
+                alt="verbal icon"
+              />Verbal
+            </div>
+            <div class="breakdown-score">
+              61 <span class="breakdown-score-alt-color">/ 100</span>
+            </div>
+          </div>
+
+          <div class="breakdown-container visual">
+            <div class="breakdown-title">
+              <img
+                class="breakdown-icons"
+                src="./assets/images/icon-visual.svg"
+                alt="visual icon"
+              />Visual
+            </div>
+            <div class="breakdown-score">
+              72 <span class="breakdown-score-alt-color">/ 100</span>
+            </div>
+          </div>
+        </div>
+        <div class="continue-button">Continue</div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="" target="blank_">exc</a>.
+    </div>
+  </body>
+</html>
